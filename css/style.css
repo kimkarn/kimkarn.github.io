@@ -151,10 +151,6 @@ header nav ul li:hover {
   display: contents;
 }
 
-#info h3 {
-  margin-top: -9em;
-}
-
 #info h4 {
   margin-top: -2em;
 }
@@ -166,9 +162,6 @@ header nav ul li:hover {
 
 /* LINK *********************************/
 
-#link h3 {
-  margin-top: -5em;
-}
 #link ul {
   display: contents;
 }
