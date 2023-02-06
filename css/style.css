@@ -8,10 +8,6 @@ body {
   text-align: center;
 }
 
-section {
-  min-height: 100vh;
-}
-
 a {
   text-decoration: none;
 }
@@ -21,7 +17,13 @@ li {
 }
 
 h1,
-h2,
+h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 h3,
 a {
   font-family: "Noto Sans", sans-serif;
@@ -36,7 +38,12 @@ h3 {
   margin-bottom: 0.1em;
 }
 
-h4,
+h4 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: #28355c;
+  margin-left: -1em;
+}
 p {
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
@@ -75,25 +82,25 @@ header {
   width: 14em;
   height: 4em;
   float: left;
-  margin: -5em 0 0 0;
+  margin: -5em 0 0 -4em;
 }
 
 #logo img {
   width: 100%;
-  scale: 0.5;
+  scale: 0.4;
 }
 
 header nav {
   float: right;
-  margin: 0 5em 0 0;
+  margin: 0.5em 1em 0 0;
 }
 
 header nav ul li {
   float: left;
-  margin-left: 2em;
+  margin-left: 1.3em;
 }
 header nav ul a li {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 header nav ul li:hover {
@@ -106,17 +113,12 @@ header nav ul li:hover {
   background: url(../img/landing.png);
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #home h1 {
-  margin: 1.5em auto 0 auto;
-  font-size: 8em;
-}
-
-#home h2 {
-  margin: 0 auto 0 auto;
-  font-size: 4em;
+  margin: 0.7em auto auto auto;
+  font-size: 5em;
 }
 
 #home img {
@@ -131,13 +133,12 @@ header nav ul li:hover {
 
 /* ABOUT *********************************/
 #about img {
-  width: 22em;
-  margin-top: -15em;
-  margin-bottom: -8em;
+  width: 20em;
+  margin-bottom: -6em;
 }
 
 #about p {
-  width: 700px;
+  width: 90%;
   margin: 1em auto 0 auto;
 }
 
@@ -150,6 +151,9 @@ header nav ul li:hover {
 #info ul {
   display: contents;
 }
+#info h3 {
+  margin-top: 3em;
+}
 
 #info h4 {
   margin-top: -2em;
@@ -157,77 +161,16 @@ header nav ul li:hover {
 
 #info ul hr {
   width: 100%;
-  height: 0.1em;
+  height: 0.3em;
+  opacity: 50%;
 }
 
 /* LINK *********************************/
 
+#link h3 {
+  margin-top: 3em;
+}
+
 #link ul {
   display: contents;
-}
-
-/* MEDIA QUERIES *********************************/
-
-/* TABLETS */
-
-@media screen and (max-width: 1024px) {
-  #logo img {
-    width: 100%;
-    margin-top: -5em;
-    scale: 0.5;
-  }
-
-  header nav {
-    margin-top: 0;
-  }
-}
-
-header nav ul li {
-  font-size: 12px;
-}
-
-#home h2 {
-  font-size: 22px;
-}
-
-h3 {
-  padding-top: 2%;
-}
-
-#about p {
-  width: 80%;
-}
-
-/* MOBILES */
-
-@media screen and (max-width: 480px) {
-  header nav {
-    margin: 0;
-    float: none;
-  }
-  #logo img {
-    width: 100%;
-    margin: 0 1em 0 -8em;
-    scale: 0.4;
-  }
-  #home h1 {
-    margin: 1.5em auto 0 auto;
-    font-size: 5em;
-  }
-
-  #home h2 {
-    margin: 0 auto 0 auto;
-    font-size: 2.5em;
-  }
-  header nav {
-    float: right;
-    margin: 0.5em 1em 0 0;
-  }
-  header nav ul li {
-    float: left;
-    margin-left: 1em;
-  }
-  header nav ul a li {
-    font-size: 1em;
-  }
 }
